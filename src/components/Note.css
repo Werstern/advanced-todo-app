@@ -1,0 +1,52 @@
+.note__container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    float: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow .3s;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.note__container:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.note__delete-icon {
+    position: absolute;
+    top:5px;
+    right:5px;
+    display: none;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.note__edit-icon {
+  position: absolute;
+  top:20px;
+  left:5px;
+  display: none;
+  color: rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+
+.note__container:hover .note__delete-icon,
+.note__container:hover .note__edit-icon  {
+    display: block;
+}
+
+.note__container.block {
+  width: 240px;
+}
+
+.finished_note {
+  text-decoration: line-through;
+}
+
+.note__text:hover {
+  cursor: pointer;
+}

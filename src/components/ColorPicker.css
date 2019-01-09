@@ -1,0 +1,31 @@
+.color-picker__container {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-picker__color {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  position: relative;
+}
+
+.color-picker__color.non-active_color {
+  border-color: black;
+}
+
+.color-picker__color.active {
+  border-color: red;
+}
+.color-picker__color.active:after {
+  content: "\2714";
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  font-weight: 800;
+  color: red;
+}
